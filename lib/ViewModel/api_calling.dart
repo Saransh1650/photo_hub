@@ -15,11 +15,14 @@ class ApiCalling extends GetxController {
   final dio = Dio();
 
   void request(String param) async {
-    var response = await dio.get('https://pixabay.com/api/videos/?key=$apiKey',
+   try{ var response = await dio.get('https://pixabay.com/api/videos/?key=$apiKey',
         queryParameters: {'q': param, 'image_type': 'video', 'pretty': true});
     Data result = Data.fromJson(response.data);
     data.value = result;
     print(param);
-    print(data.value?.hits);
+    print(data.value?.hits);}
+    catch(e){
+      print(e);
+    }
   }
 }
