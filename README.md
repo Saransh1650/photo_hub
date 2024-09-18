@@ -1,5 +1,12 @@
 # assignment_app
 
+* used https://pixabay.com/api/docs/ for the development
+
+* Made a custom bottom nav bar without packages
+* Implemented safe seach feature without getting error
+* Implemented error handling and state management
+
+
 ## Main Screen
 ![Screen Recording 2024-09-19 at 00 05 40](https://github.com/user-attachments/assets/167a1998-2a07-431d-a650-e589bd61f0b4)
 
