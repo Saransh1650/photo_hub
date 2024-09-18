@@ -22,7 +22,7 @@ class ApiCalling extends GetxController {
     print(param);
     print(data.value?.hits);}
     catch(e){
-      print(e);
+      print(e); 
     }
   }
 }
